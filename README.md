@@ -35,3 +35,14 @@ stateDiagram-v2
     
     WIN --> START : Press RESET (KEY[0])
     LOSE --> START : Press RESET (KEY[0])
+```
+## Hardware Demonstration
+
+| Initialization | Victory State | Defeat State |
+| :---: | :---: | :---: |
+| <img src="assets/strt.jpg" width="250" alt="Start Screen displaying Strt"> | <img src="assets/boss.jpg" width="250" alt="Winning Screen displaying BOSS"> | <img src="assets/lose.jpg" width="250" alt="Losing Screen displaying LOSE"> |
+| **START:** The system boots and waits for the player to press `KEY[2]`. | **WIN:** The player successfully stops the LED in the active target zone. | **LOSE:** The player misses the target zone. |
+
+## How to play?
+I have uploaded the .sof file so you can just implement it in your Intel/Altera DE10-Standard (Cyclone V) development board and try to beat it.
+Also you can make it on any other FPGA just make sure resources are enough and take files and go ahead.
